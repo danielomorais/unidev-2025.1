@@ -57,14 +57,19 @@ p {
     color: var(--colorfont1);
 }
 
-p span {
+p a {
     font-family: Inter;
     font-weight: 800;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
+    text-decoration: none;
     color: var(--colorfont2);
+}
+
+p a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -92,6 +97,12 @@ p span {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.185);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    cursor: pointer;
+}
+
+.box:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 .burgerimg {
